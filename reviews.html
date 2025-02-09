@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы об Ораторах</title>
+    <link rel="stylesheet" href="reviews.css">
+    <style>
+.custom-navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #343a40;
+    padding: 1rem 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.custom-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.custom-nav-item {
+    margin: 0 10px;
+}
+
+.custom-nav-link {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-nav-link:hover {
+    background-color: #010101;
+    color: white;
+}
+html,
+body {
+  height: 100vh; 
+  margin: 0;
+  padding: 0;
+
+}
+    </style>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" class="favicon">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="custom-navbar">
+            <ul class="custom-nav">
+                <li class="custom-nav-item"><a href="home.html" class="custom-nav-link">Домашняя Страница</a></li>
+                <li class="custom-nav-item"><a href="sports.html" class="custom-nav-link">Ораторы</a></li>
+                <li class="custom-nav-item"><a href="reviews.html" class="custom-nav-link">Отзывы</a></li>
+                <li class="custom-nav-item"><a href="contacts.html" class="custom-nav-link">Контакты</a></li>
+            </ul>
+        </header>
+    </div>
+
+    <header class="header">
+        <div class="overlay">
+            <h1>Отзывы о великих ораторах</h1>
+            <p class="subtitle">Гордон • Познер • Задорнов</p>
+        </div>
+    </header>
+
+    <section class="reviews">
+        <div class="review-card">
+            <div class="review-header">
+                <img src="images/us1.jpg" alt="Пользователь" class="user-avatar">
+                <div class="user-info">
+                    <h2>Арсен</h2>
+                    <span class="rating">★★★★★</span>
+                </div>
+            </div>
+            <h3>Оратор: Дмитрий Гордон</h3>
+            <p class="review-text">Удивительный подход к интервью. Особенно впечатляет техника задавания острых вопросов и умение раскрыть собеседника. Учусь у него искусству глубокой подготовки к беседам.</p>
+            <span class="review-date">15 марта 2024</span>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <img src="images/us2.jpg" alt="Пользователь" class="user-avatar">
+                <div class="user-info">
+                    <h2>Амир</h2>
+                    <span class="rating">★★★★☆</span>
+                </div>
+            </div>
+            <h3>Оратор: Владимир Познер</h3>
+            <p class="review-text">Познер - мастер логических переходов и структурированной беседы. Его техника ведения диалога помогла мне улучшить свои навыки в деловых переговорах.</p>
+            <span class="review-date">12 марта 2024</span>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <img src="images/us3.jpg" alt="Пользователь" class="user-avatar">
+                <div class="user-info">
+                    <h2>Даниал</h2>
+                    <span class="rating">★★★★★</span>
+                </div>
+            </div>
+            <h3>Оратор: Михаил Задорнов</h3>
+            <p class="review-text">Уникальный стиль подачи материала и тонкий юмор. Его способность находить интересные детали в повседневности и преподносить их аудитории - настоящее искусство.</p>
+            <span class="review-date">10 марта 2024</span>
+        </div>
+
+        <div class="review-card">
+            <div class="review-header">
+                <img src="images/us4.jpg" alt="Пользователь" class="user-avatar">
+                <div class="user-info">
+                    <h2>Даниял</h2>
+                    <span class="rating">★★★★★</span>
+                </div>
+            </div>
+            <h3>Оратор: Михаил Задорнов</h3>
+            <p class="review-text">Непревзойденное чувство юмора и мастерство работы с аудиторией. Его способность находить необычные детали в обычных вещах и преподносить их с особым стилем вдохновляет меня на развитие собственного ораторского мастерства.</p>
+            <span class="review-date">8 марта 2024</span>
+        </div>
+
+        <!-- Форма добавления отзыва -->
+        <div class="add-review-section">
+            <h2>Оставить отзыв</h2>
+            <form id="review-form" class="review-form">
+                <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="speaker">Выберите оратора</label>
+                    <select id="speaker" required>
+                        <option value="">Выберите оратора</option>
+                        <option value="gordon">Дмитрий Гордон</option>
+                        <option value="pozner">Владимир Познер</option>
+                        <option value="zadornov">Михаил Задорнов</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="review">Ваш отзыв</label>
+                    <textarea id="review" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="rating">Оценка</label>
+                    <div class="rating-input">
+                        <input type="radio" name="rating" value="5" id="star5"><label for="star5">★</label>
+                        <input type="radio" name="rating" value="4" id="star4"><label for="star4">★</label>
+                        <input type="radio" name="rating" value="3" id="star3"><label for="star3">★</label>
+                        <input type="radio" name="rating" value="2" id="star2"><label for="star2">★</label>
+                        <input type="radio" name="rating" value="1" id="star1"><label for="star1">★</label>
+                    </div>
+                </div>
+                <button type="submit">Отправить отзыв</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+    <p>© 2025 Ораторское искусство. All rights reserved.</p>
+    <br>
+    <br>
+    <p> Contact: 230802@astanait.edu.kz | +7 (777) 777 7777</p>
+  </footer>
+    <script src="reviews.js"></script>
+
+</body>
+
+</html>

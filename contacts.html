@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contacts </title>
+    <link rel="stylesheet" href="contacts.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" class="favicon">
+    <style>
+        .custom-navbar {
+      display: flex;
+      justify-content: center;
+      background-color: #343a40;
+      padding: 1rem 0;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      
+    }
+
+    .custom-nav {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      max-width: 1200px;
+      color: white;
+    }
+
+    .custom-nav-item {
+      margin: 0 10px;
+    }
+
+    .custom-nav-link {
+      text-decoration: none;
+      color: #fafafa;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      
+    }
+
+    .custom-nav-link:hover {
+      background-color: #030303;
+      color: white;
+    }
+    </style>
+</head>
+
+<body>
+  <header class="custom-navbar">
+      <ul class="custom-nav">
+        <li class="custom-nav-item"><a href="home.html" class="custom-nav-link">Домашняя Страница</a></li>
+        <li class="custom-nav-item"><a href="sports.html" class="custom-nav-link">Ораторы</a></li>
+        <li class="custom-nav-item"><a href="reviews.html" class="custom-nav-link">Отзывы</a></li>
+        <li class="custom-nav-item"><a href="contacts.html" class="custom-nav-link">Контакты</a></li>
+      </ul>
+  </header>
+
+  <main>
+      <section class="contact-info">
+          <h1>Свяжитесь с нами</h1>
+          <p>Адрес: Мангилик Ел, C1, Астана, Казахстан</p>
+          <p>Телефон: +7 (777) 777 7777</p>
+          <p>Почта: AITU@oratorskoeisskustvo.kz</p>
+      </section>
+
+      <section class="contact-form">
+          <h2>Отправьте нам сообщение</h2>
+          <form id="contactForm">
+              <label for="name">Имя:</label>
+              <input type="text" id="name" name="name" required>
+
+              <label for="email">Почта:</label>
+              <input type="email" id="email" name="email" required>
+
+              <label for="message">Сообщение:</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+
+              <button type="submit" style="background-color: #343a40; color: white;">Отправить</button>
+          </form>
+      </section>
+
+      <section class="map">
+          <h2>Наша Геолокация</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2505.963605430845!2d71.41559061259575!3d51.09067917160359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x424585a605525605%3A0x4dff4a1973f7567e!2sAstana%20IT%20University!5e0!3m2!1sru!2skz!4v1731682671945!5m2!1sru!2skz" width="600" height="450" loading="lazy"></iframe>
+          <button id="openMap" class="check-status-btn" style="background-color: #343a40; color: white;" onclick="window.location.href='https://www.google.com/maps/place/Astana+IT+University/@51.0906792,71.4155906,17z/data=!3m1!4b1!4m5!3m4!1s0x424585a605525605:0x4dff4a1973f7567e!8m2!3d51.0906792!4d71.4177793'">Открыть в Гугл Картах</button>
+      </section>
+
+      <section class="working-hours">
+          <h2>Рабочие Часы</h2>
+          <p id="workingStatus"></p>
+          <p>ПН-ВС: 9:00 - 18:00</p>
+          <button id="checkStatusBtn" class="check-status-btn " style="background-color: #343a40; color: white;">Проверьте работаем ли мы</button>
+      </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Ораторское Исскуство. All rights reserved.</p>
+    
+    <p> Contact: 230802@astanait.edu.kz | +7 (777) 777 7777</p>
+  </footer>
+
+  <div id="customAlertOverlay" class="alert-overlay">
+      <div class="alert-modal">
+          <p class="alert-message" id="alertMessage"></p>
+          <button id="closeAlertButton" class="alert-ok-btn">OK</button>
+      </div>
+  </div>
+
+  <script src="contacts.js"></script>
+
+</body>
+
+</html>

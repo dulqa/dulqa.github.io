@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ораторское мастерство Владимира Познера</title>
+    <link rel="stylesheet" href="pozner.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ораторское мастерство Владимира Познера</h1>
+        
+        <h2>1. Основные принципы выступлений</h2>
+        <ul>
+            <li><strong>Глубокая подготовка:</strong> Познер всегда детально изучает тему и собеседника.</li>
+            <li><strong>Спокойствие и уверенность:</strong> Его голос уравновешен, интонация мягкая, но авторитетная.</li>
+            <li><strong>Рациональность:</strong> Он никогда не использует эмоции вместо аргументов.</li>
+            <li><strong>Умение слушать:</strong> Познер не просто задаёт вопросы, но внимательно следит за ответами.</li>
+        </ul>
+        
+        <h2>2. Структура идеального интервью</h2>
+        <ul>
+            <li><strong>Ясное вступление:</strong> Подготовленный фон по теме или личности.</li>
+            <li><strong>Гибкая стратегия:</strong> Он не следует строгому сценарию, а адаптируется по ходу диалога.</li>
+            <li><strong>Нейтральность:</strong> Вопросы провокационные, но без личного отношения.</li>
+            <li><strong>Заключение с выводами:</strong> Подведение итогов с обобщением ключевых моментов.</li>
+        </ul>
+        
+        <h2>3. Примеры его работы</h2>
+        <p>Разбор интервью Познера:</p>
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    Как он задаёт неожиданные вопросы
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <div class="video-wrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/8TDHOEUn0Oo?si=X9Lu_xD8a6s9rg_F" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header">
+                    Как он управляет паузами
+                    <span class="accordion-icon">+</span>
+                </button>
+                <div class="accordion-content">
+                    <div class="video-wrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/YwXfrPQYtCM?si=HuXSUWi5dBHyJdNs" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <h2>4. Практические советы</h2>
+        <ul>
+            <li>Изучайте материалы заранее, чтобы чувствовать себя уверенно.</li>
+            <li>Учитесь слушать собеседника, а не просто ждать своей очереди говорить.</li>
+            <li>Говорите размеренно, с правильными паузами.</li>
+        </ul>
+        <h2>5. Практика</h2>
+        <div class="practice-section">
+            <h3>Загрузите свои видео для практики</h3>
+            <div class="video-upload-container">
+                <input type="file" id="videoUpload" accept="video/*" class="video-input">
+                <label for="videoUpload" class="upload-label">Выберите видео</label>
+            </div>
+            <div id="videoPreviewContainer" class="video-preview-container">
+                <video id="videoPreview" controls style="display: none;">
+                    Your browser does not support the video element.
+                </video>
+                <div id="uploadMessage" class="upload-message"></div>
+            </div>
+            <div class="practice-notes">
+                <textarea id="practiceNotes" placeholder="Запишите свои наблюдения здесь..." rows="4"></textarea>
+                <button id="saveNotes" class="save-button">Сохранить заметки</button>
+            </div>
+        </div>
+
+
+        <h2>6. Проверьте свои знания</h2>
+        <button id="startQuiz" class="quiz-button">Пройти тест</button>
+        <div id="quizContainer" class="quiz-container" style="display: none;">
+            <div id="question" class="quiz-question"></div>
+            <div id="answers" class="quiz-answers"></div>
+            <div id="result" class="quiz-result"></div>
+        </div>
+
+        <h2>7. Обсуждение и вопросы</h2>
+        <div class="chat-section">
+            <div class="chat-container">
+                <div class="chat-messages" id="chatMessages"></div>
+                <div class="chat-input-container">
+                    <input type="text" id="userNameInput" placeholder="Ваше имя" class="chat-name-input">
+                    <textarea id="messageInput" placeholder="Ваше сообщение..." class="chat-message-input"></textarea>
+                    <button id="sendMessage" class="chat-send-button">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <a href="sports.html" class="back-button">← Назад</a>
+    <script src="pozner.js"></script>
+    <script src="chat.js"></script>
+</body>
+</html>

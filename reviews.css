@@ -1,0 +1,227 @@
+:root {
+    --primary: #6441a5;
+    --secondary: #2c2c2c;
+    --accent: #9146ff;
+    --text: #333333;
+    --bg: #f5f5f5;
+    --card-bg: #ffffff;
+    --shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url('images/wallpaperflare.com_wallpaper.jpg') no-repeat center/cover;
+    height: 60vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.header .overlay {
+    margin-bottom: 270px;
+}
+
+.header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    opacity: 0.9;
+}
+
+.reviews {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 4rem 2rem;
+    background: var(--bg);
+    padding-top: 80px; 
+    margin-top: 20px;  
+}
+
+.review-card {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.user-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-info h2 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.rating {
+    color: #ffd700;
+    font-size: 1.2rem;
+}
+
+.review-text {
+    color: var(--text);
+    line-height: 1.6;
+    margin: 1rem 0;
+}
+
+.review-date {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.add-review-section {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    grid-column: 1 / -1;
+}
+
+.review-form {
+    display: grid;
+    gap: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: var(--text);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.rating-input {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.5rem;
+}
+
+.rating-input input {
+    display: none;
+}
+
+.rating-input label {
+    cursor: pointer;
+    font-size: 2rem;
+    color: #ddd;
+    transition: color 0.3s ease;
+}
+
+.rating-input label:hover,
+.rating-input label:hover ~ label,
+.rating-input input:checked ~ label {
+    color: #ffd700;
+}
+
+button[type="submit"] {
+    background: var(--primary);
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: var(--accent);
+}
+
+.add-review {
+    padding: 20px;
+    background: #fff;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.add-review form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-review input, .add-review textarea, .add-review button {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.add-review button {
+    background: #000000;
+    color: rgb(231, 227, 227);
+    border: none;
+    cursor: pointer;
+}
+
+.add-review button:hover {
+    background: #000000;
+}
+
+.img1 {
+    height: 20px;
+    width: 20px;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0 0 10px;
+}
+

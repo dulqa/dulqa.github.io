@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Ораторы </title>
+  <link rel="stylesheet" href="sport.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" class="favicon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body,
+    html {
+      background: linear-gradient(to bottom, #508dca, #e6d8d8);
+    }
+
+    header {
+      width: 100%;
+    }
+
+    .container-fluid {
+      padding: 0;
+    }
+
+    .custom-navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #343a40;
+    padding: 1rem 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    color: white;
+}
+
+.custom-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.custom-nav-item {
+    margin: 0 10px;
+}
+
+.custom-nav-link, .btn {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-nav-link:hover, .btn:hover {
+    background-color: rgb(2, 2, 2); 
+    color: white !important; 
+}
+
+/* Новые стили для кнопки */
+.btn-learn-more {
+    background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.btn-learn-more:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+    background: linear-gradient(45deg, #4ECDC4, #FF6B6B);
+    color: white;
+    text-decoration: none;
+}
+
+.btn-learn-more::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.3),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+.btn-learn-more:hover::before {
+    left: 100%;
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <header class="custom-navbar">
+      <ul class="custom-nav">
+        <li class="custom-nav-item"><a href="home.html" class="custom-nav-link">Домашняя Страница</a></li>
+        <li class="custom-nav-item"><a href="sports.html" class="custom-nav-link">Ораторы</a></li>
+        <li class="custom-nav-item"><a href="reviews.html" class="custom-nav-link">Отзывы</a></li>
+        <li class="custom-nav-item"><a href="contacts.html" class="custom-nav-link">Контакты</a></li>
+      </ul>
+    </header>
+  </div>
+  <main class="container">
+    <div class="featurette">
+        <div class="text-section">
+            <h2>Михаил Задорнов</h2>
+            <p>
+                <b>
+                    Михаил Задорнов — российский сатирик и оратор, мастер острого юмора и иронии. <br>
+                    Он умел легко развеивать напряжение в зале, одновременно заставляя задуматься над важными вопросами через сарказм и глубокие наблюдения о жизни. <br>
+                    Его выступления отличались прямолинейностью и смелостью, затрагивая острые темы и вызывая откровенные реакции у аудитории. <br>
+                    Задорнов всегда умел устанавливать контакт с залом, подстраиваясь под его реакцию и создавая атмосферу доверия. <br>
+                    Его методика ораторства базируется на доступности и практичности, делая сложные идеи понятными через юмор. <br>
+                    Обучение у него развивает навыки самоиронии и умения управлять эмоциями слушателей, что делает речь более живой. <br>
+                    Методика Задорнова помогает не только говорить уверенно, но и находить нестандартные подходы к любой теме.
+                </b>
+            </p>
+            <p><a class="btn-learn-more" href="zadornov.html">Подробнее</a></p>
+
+        </div>
+      <div class="image-section">
+        <img src="images/paragliding.png" alt="Paragliding">
+      </div>
+    </div>
+
+    <div class="featurette">
+        <div class="text-section">
+            <h2>Владимир Познер</h2>
+            <p>
+                <b>
+                    Владимир Познер — российский журналист и телеведущий, мастер риторики, аналитического мышления и аргументированной речи. <br>
+                    Его выступления всегда отличались глубокой логикой, убедительностью и умением донести сложные мысли простым и понятным языком. <br>
+                    Познер был мастером создания живых дискуссий, удерживая внимание аудитории через проницательные вопросы и внимательное выслушивание собеседников. <br>
+                    Его стиль риторики сочетает ясность, точность и умение легко адаптироваться к любой ситуации. <br>
+                    Он эффективно использует паузы, интонацию и аргументы, чтобы убедить или заставить задуматься. <br>
+                    Методика Познера помогает развить уверенность в публичных выступлениях, научиться анализировать и чётко формулировать мысли. <br>
+                    Выбирая методику Познера, вы учитесь быть не только хорошим оратором, но и мастером глубоких и продуктивных разговоров.
+                </b>
+            </p>
+            <p><a class="btn-learn-more" href="pozner.html">Подробнее</a></p>
+        </div>
+      <div class="image-section">
+        <img src="images/skiingsport.png" alt="Skiing">
+      </div>
+    </div>
+
+    <div class="featurette">
+        <div class="text-section">
+            <h2>Дмитрий Гордон</h2>
+            <p>
+                <b>
+                    Дмитрий Гордон — украинский журналист и интервьюер, мастер диалога, задающий точные вопросы и раскрывающий собеседников через логику, прямоту и уверенность. <br>
+                    Его стиль ораторства отличается умением задавать важные и провокационные вопросы, что помогает раскрыть собеседника и получить откровенные ответы. <br>
+                    Гордон использует четкость, прямолинейность и открытость, что делает его выступления и интервью увлекательными и насыщенными информацией. <br>
+                    Он всегда умеет создавать атмосферу доверия, располагая к себе как собеседников, так и зрителей. <br>
+                    Его подход к ораторскому мастерству включает в себя не только технику речи, но и умение слушать, что делает его общение с аудиторией живым и интересным. <br>
+                    Методика Гордона помогает развить уверенность в себе, научиться задавать правильные вопросы и вести глубокие, содержательные беседы. <br>
+                    Выбирая его подход, вы учитесь быть не только хорошим оратором, но и умелым интервьюером, который понимает, как вовлечь и заинтересовать людей.
+                </b>
+            </p>
+            <p><a class="btn-learn-more" href="gordon.html">Подробнее</a></p>
+        </div>
+      <div class="image-section">
+        <img src="images/skydiving.png" alt="Skydiving">
+      </div>
+    </div>
+  </main>
+
+  <section class="skills-section">
+    <h2>Ключевые навыки оратора</h2>
+    <div class="skills-container">
+      <div class="skill-card">
+        <i class="fas fa-comments"></i>
+        <h3>Искусство речи</h3>
+        <p>Четкая дикция, правильное дыхание и управление голосом</p>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-users"></i>
+        <h3>Работа с аудиторией</h3>
+        <p>Умение удерживать внимание и вовлекать слушателей</p>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-brain"></i>
+        <h3>Структура выступления</h3>
+        <p>Грамотное построение речи и аргументации</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote-section">
+    <h2>Цитаты великих ораторов</h2>
+    <div class="quotes-container">
+      <div class="quote-card">
+        <blockquote>
+          "Красноречие – это искусство покорять умы."
+          <footer>- Марк Туллий Цицерон</footer>
+        </blockquote>
+      </div>
+      <div class="quote-card">
+        <blockquote>
+          "Кто не умеет говорить, карьеры не сделает."
+          <footer>- Наполеон Бонапарт</footer>
+        </blockquote>
+      </div>
+      <div class="quote-card">
+        <blockquote>
+          "Слово - самое сильное оружие человека."
+          <footer>- Аристотель</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Ораторское искусство. All rights reserved.</p>
+    <br>
+    <p>Contact: 230802@astanait.edu.kz | +7 (777) 777 7777</p>
+  </footer>
+
+</body>
+</html>

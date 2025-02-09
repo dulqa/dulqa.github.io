@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Методика ораторского искусства Дмитрия Гордона</title>
+    <link rel="stylesheet" href="gordon.css">
+</head>
+<body>
+    <header>
+        <h1>Ораторское искусство Дмитрия Гордона</h1>
+    </header>
+    <main>
+        <section>
+            <h2>1. Основные принципы</h2>
+            <article>
+                <h3>1.1. Глубокая подготовка</h3>
+                <p>Гордон тщательно изучает тему и собеседника перед интервью, что делает его беседы осмысленными.</p>
+            </article>
+            <article>
+                <h3>1.2. Чёткая дикция</h3>
+                <p>Говорит ровно и уверенно, что делает его речь убедительной.</p>
+            </article>
+            <article>
+                <h3>1.3. Искренность и уважение</h3>
+                <p>Проявляет интерес и ведёт беседу без агрессии, что помогает раскрыть собеседника.</p>
+            </article>
+        </section>
+        <section>
+            <h2>2. Структура идеального интервью</h2>
+            <article>
+                <h3>2.1. Интригующее начало</h3>
+                <p>Гордон начинает с неожиданного вопроса или факта, который зацепит зрителя.</p>
+            </article>
+            <article>
+                <h3>2.2. Основная часть</h3>
+                <p>Использует открытые вопросы и даёт собеседнику возможность раскрыться.</p>
+            </article>
+            <article>
+                <h3>2.3. Запоминающийся финал</h3>
+                <p>Заканчивает интервью сильной мыслью или эмоциональным вопросом.</p>
+            </article>
+        </section>
+        <section>
+            <h2>3. Примеры интервью</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Как он задаёт острые вопросы
+                        <span class="accordion-icon">▸</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/CqTeL4vzAac?si=p9uXWMSZz7FfjfRl" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Как он использует паузы
+                        <span class="accordion-icon">▸</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/YuC_wR-PyCI?si=u8-f237CkljRvCrt" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Как он удерживает контроль над беседой
+                        <span class="accordion-icon">▸</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/90_ky7wazbY?si=4_PIS3WIMbIGGBNq" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>4. Практика</h2>
+            <p>Попробуйте подготовить вопросы, тренируйте дикцию и ведите диалоги в стиле Гордона.</p>
+            <ul>
+                <li><strong>Задание 1:</strong> Выберите известную личность и составьте 10 вопросов, которые могли бы раскрыть её с неожиданных сторон.</li>
+                <li><strong>Задание 2:</strong> Запишите 5-минутное интервью с другом или коллегой, используя технику Гордона: открытые вопросы, паузы, уважительное общение.</li>
+                <li><strong>Задание 3:</strong> Прослушайте одно из интервью Гордона, выделите ключевые моменты (интонация, паузы, стратегия ведения беседы) и попробуйте повторить их в разговоре.</li>
+                <li><strong>Задание 4:</strong> Проведите дебаты на актуальную тему, используя методы ведения беседы Гордона (контроль хода разговора, уважительное общение, острые вопросы).</li>
+                <li><strong>Задание 5:</strong> Практикуйте дикцию: выберите абзац текста и прочитайте его разными интонациями — серьёзно, саркастично, с интересом.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>5. Практика</h2>
+            <div class="practice-section">
+                <h3>Загрузите свои видео для практики</h3>
+                <div class="video-upload-container">
+                    <input type="file" id="videoUpload" accept="video/*" class="video-input">
+                    <label for="videoUpload" class="upload-label">Выберите видео</label>
+                </div>
+                <div id="videoPreviewContainer" class="video-preview-container">
+                    <video id="videoPreview" controls style="display: none;">
+                        Your browser does not support the video element.
+                    </video>
+                    <div id="uploadMessage" class="upload-message"></div>
+                </div>
+                <div class="practice-notes">
+                    <textarea id="practiceNotes" placeholder="Запишите свои наблюдения здесь..." rows="4"></textarea>
+                    <button id="saveNotes" class="save-button">Сохранить заметки</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>6. Проверьте свои знания</h2>
+            <button id="startQuiz" class="quiz-button">Пройти тест</button>
+            <div id="quizContainer" class="quiz-container" style="display: none;">
+                <div id="question" class="quiz-question"></div>
+                <div id="answers" class="quiz-answers"></div>
+                <div id="result" class="quiz-result"></div>
+            </div>
+        </section>
+        <section id="chatSection">
+            <h2>Обсуждение и вопросы</h2>
+            <div class="chat-container">
+                <div class="chat-messages" id="chatMessages"></div>
+                <div class="chat-input-container">
+                    <input type="text" id="userNameInput" placeholder="Ваше имя" class="chat-name-input">
+                    <textarea id="messageInput" placeholder="Ваше сообщение..." class="chat-message-input"></textarea>
+                    <button id="sendMessage" class="chat-send-button">Отправить</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <a href="sports.html" class="back-button">← Вернуться</a>
+    <script src="gordon.js"></script>
+    <script src="chat.js"></script>
+</body>
+</html>
